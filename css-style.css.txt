@@ -1,116 +1,97 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset */
+* {
     margin: 0;
     padding: 0;
-    color: #333;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
     line-height: 1.6;
-    background-color: #f9f9f9;
+    color: #333;
 }
 
-a {
-    color: #0073e6;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Header */
-header {
-    background-color: #0a1f44;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-/* Navigation */
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    margin: 0 15px;
-    color: #fff;
-    font-weight: bold;
-}
-
-/* Main content */
 .container {
-    width: 90%;
     max-width: 1100px;
-    margin: 20px auto;
+    margin: auto;
+    padding: 20px;
 }
 
-/* Section Titles */
-h2 {
-    color: #0a1f44;
+/* Hero */
+.hero {
+    background-color: #0b0c10;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    background: #1f2833;
+    color: #66fcf1;
+    padding: 12px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: #45a29e;
 }
 
 /* Services */
 .services {
+    padding: 60px 20px;
+    background: #c5c6c7;
+}
+
+.service-cards {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
 }
 
-.service {
-    background: #fff;
-    padding: 20px;
-    flex: 1 1 300px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-/* Contact Form */
-form {
+.card {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    max-width: 600px;
-    margin: 0 auto;
+    flex: 1 1 250px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+/* About */
+.about {
+    padding: 60px 20px;
+    text-align: center;
 }
 
-button {
-    background-color: #0a1f44;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
+/* Contact CTA */
+.contact-cta {
+    background: #1f2833;
+    color: #66fcf1;
+    text-align: center;
+    padding: 60px 20px;
 }
 
-button:hover {
-    background-color: #0052a3;
+.contact-cta .btn {
+    background: #45a29e;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #0a1f44;
+    background: #0b0c10;
     color: #fff;
-    margin-top: 40px;
+    text-align: center;
+    padding: 20px 0;
 }
 
 /* Responsive */
-@media(max-width: 768px){
-    .services {
+@media(max-width: 768px) {
+    .service-cards {
         flex-direction: column;
     }
 }
